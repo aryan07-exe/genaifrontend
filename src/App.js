@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Page from "./components/Page";
 import Login from "./components/Login";
 import Chat from "./components/Chat";
+import Social from "./components/Social";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         {/* Pass a real userId here after login/registration */}
         <Route path="/chat" element={<Chat userId={2} />} />
+        <Route path="/social" element={<Social userId={2} />} />
       </Routes>
     </Router>
   );
